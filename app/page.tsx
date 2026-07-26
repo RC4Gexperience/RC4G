@@ -62,11 +62,16 @@ export default function Home() {
         </div>
 
         <div className="hero-visual">
-          <div className="signal signal-one" />
-          <div className="signal signal-two" />
-          <div className="signal signal-three" />
           <div className="hero-photo">
-            <img src="/hilux-angle.jpg" alt="Absima Hilux RC4G en franchissement sur les pierres" />
+            <img
+              src="/hilux-angle-hero.jpg"
+              alt="Absima Hilux RC4G en franchissement sur les pierres"
+              width="1400"
+              height="1050"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+            />
             <div className="photo-label"><span>01</span> NOUVELLE BASE 4×4</div>
           </div>
           <div className="hero-meta">
