@@ -38,7 +38,7 @@ export default function Home() {
           <a href="#journal">Journal</a>
           <a href="#vision">Vision</a>
         </nav>
-        <a className="nav-cta" href="mailto:contact@rc4g.fr">Contact</a>
+        <a className="nav-cta" href="#contact">Contact</a>
       </header>
 
       <section className="hero" id="accueil">
@@ -69,13 +69,15 @@ export default function Home() {
             <img src="/hilux-angle.jpg" alt="Absima Hilux RC4G en franchissement sur les pierres" />
             <div className="photo-label"><span>01</span> NOUVELLE BASE 4×4</div>
           </div>
-          <div className="hero-logo">
-            <img src="/logo-rc4g.png" alt="RC4G Expérience" />
-          </div>
-          <div className="telemetry-card">
-            <div><span className="live-dot" /> SYSTÈME</div>
-            <strong>PROTOCOLE ACTIF</strong>
-            <small>PC ↔ 4G ↔ ANDROID ↔ ESP32</small>
+          <div className="hero-meta">
+            <div className="hero-logo">
+              <img src="/logo-rc4g.png" alt="RC4G Expérience" />
+            </div>
+            <div className="telemetry-card">
+              <div><span className="live-dot" /> SYSTÈME</div>
+              <strong>PROTOCOLE ACTIF</strong>
+              <small>PC ↔ 4G ↔ ANDROID ↔ ESP32</small>
+            </div>
           </div>
         </div>
       </section>
@@ -212,7 +214,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="contact">
+      <section className="contact" id="contact">
         <div>
           <span className="section-number">RESTER CONNECTÉ</span>
           <h2>Suivez la suite<br />de l’aventure.</h2>
