@@ -1,17 +1,17 @@
 const facebook = {
   profile: "https://www.facebook.com/profile.php?id=61592446130825",
   posts: [
-    ["Journal de bord — 01", "https://www.facebook.com/reel/1363102938502122/"],
-    ["Journal de bord — 02", "https://www.facebook.com/reel/4318260528386426/"],
-    ["Dans les coulisses", "https://www.facebook.com/permalink.php?story_fbid=pfbid0rpCQdo91EqBoM2fAqcLYX2aA7RMzK1v5FyKbm8bLMRSqw7WaPNZgbkGBKKbcnEB6l&id=61592446130825"],
-    ["Journal de bord — 03", "https://www.facebook.com/reel/2316365859201616/"],
-    ["Journal de bord — 04", "https://www.facebook.com/reel/1817411546089326/"],
-    ["La vision RC4G", "https://www.facebook.com/permalink.php?story_fbid=pfbid02Qaa8YoWxqKUaXvimVyALVt16cXCJCqBFPiLCSyEkCSpsDtQuuGs4CU7yt3gQtUsZl&id=61592446130825"],
+    ["Unboxing et decouverte", "https://www.facebook.com/reel/1363102938502122/"],
+    ["Interface PC et Application", "https://www.facebook.com/reel/4318260528386426/"],
+    ["Le choix du vehicule", "https://www.facebook.com/permalink.php?story_fbid=pfbid0rpCQdo91EqBoM2fAqcLYX2aA7RMzK1v5FyKbm8bLMRSqw7WaPNZgbkGBKKbcnEB6l&id=61592446130825"],
+    ["Le prototype", "https://www.facebook.com/reel/2316365859201616/"],
+    ["developpement du logiciel", "https://www.facebook.com/reel/1817411546089326/"],
+    ["Presentation", "https://www.facebook.com/permalink.php?story_fbid=pfbid02Qaa8YoWxqKUaXvimVyALVt16cXCJCqBFPiLCSyEkCSpsDtQuuGs4CU7yt3gQtUsZl&id=61592446130825"],
   ],
 };
 
 const tech = [
-  ["01", "Pilotage à distance", "Une manette sur PC envoie direction et accélération à travers Internet, avec arrêt de sécurité en cas de coupure."],
+  ["01", "Pilotage à distance", "Une manette ou autres, envoie sur le PC les commandes à travers Internet, avec arrêt de sécurité en cas de coupure."],
   ["02", "Relais Android", "Le téléphone embarqué relie la station de pilotage à l’ESP32 par USB OTG et transmet les commandes au véhicule."],
   ["03", "Vidéo et audio en direct", "Retour caméra à faible latence, son du véhicule, enregistrement et communication vocale dans les deux sens."],
   ["04", "Interface de pilotage", "Vidéo, état des connexions, commandes, qualité, température et horizon artificiel réunis sur un seul écran."],
@@ -22,6 +22,7 @@ const milestones = [
   ["Validé", "Chaîne complète", "Manette, interface PC, réseau 4G, application Android, vidéo et audio fonctionnent ensemble."],
   ["En cours", "Absima Hilux 1/10", "Le nouveau châssis 4x4 est arrivé. L’intégration propre du système RC4G se prépare."],
   ["À venir", "Caméra pan-tilt", "Une caméra motorisée et une électronique protégée prendront place sous la carrosserie."],
+  ["À terme", "Lunettes FPV et volant", "Pour une immersion totale avec un poste de pilotage complet. Lunettes FPV ou écran panoramique"],
 ];
 
 export default function Home() {
@@ -81,7 +82,7 @@ export default function Home() {
             <div className="telemetry-card">
               <div><span className="live-dot" /> SYSTÈME</div>
               <strong>PROTOCOLE ACTIF</strong>
-              <small>PC ↔ 4G ↔ ANDROID ↔ ESP32</small>
+              <small>MANETTE ↔ PC ↔ 4G ↔ ANDROID ↔ ESP32 ↔ VEHICULE</small>
             </div>
           </div>
         </div>
