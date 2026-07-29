@@ -1,5 +1,4 @@
 const facebook = {
-  profile: "https://www.facebook.com/profile.php?id=61592446130825",
   posts: [
     ["Unboxing et decouverte", "https://www.facebook.com/reel/1363102938502122/"],
     ["Interface PC et Application", "https://www.facebook.com/reel/4318260528386426/"],
@@ -24,6 +23,11 @@ const milestones = [
   ["À venir", "Caméra pan-tilt", "Une caméra motorisée et une électronique protégée prendront place sous la carrosserie."],
   ["À terme", "Lunettes FPV et volant", "Pour une immersion totale avec un poste de pilotage complet. Lunettes FPV ou écran panoramique"],
 ];
+
+const social = {
+  facebook: "https://www.facebook.com/profile.php?id=61592446130825",
+  tiktok: "https://www.tiktok.com/@rc4g_experience"
+};
 
 export default function Home() {
   return (
@@ -53,7 +57,7 @@ export default function Home() {
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#projet">Découvrir le projet <span>↘</span></a>
-            <a className="button ghost" href={facebook.profile} target="_blank" rel="noreferrer">Suivre l’aventure <span>↗</span></a>
+            <a className="button ghost" href={social.facebook} target="_blank" rel="noreferrer">Suivre l’aventure <span>↗</span></a>
           </div>
           <div className="hero-stats">
             <div><strong>4G</strong><span>Connexion distante</span></div>
@@ -180,7 +184,7 @@ export default function Home() {
           </div>
           <div>
             <p>Essais, avancées, erreurs et bonnes surprises : je partage la construction du projet au fur et à mesure sur Facebook.</p>
-            <a className="text-link" href={facebook.profile} target="_blank" rel="noreferrer">Voir la page RC4G Expérience ↗</a>
+            <a className="text-link" href={social.facebook} target="_blank" rel="noreferrer">Voir la page RC4G Expérience ↗</a>
           </div>
         </div>
         <div className="post-grid">
@@ -226,14 +230,18 @@ export default function Home() {
           <h2>Suivez la suite<br />de l’aventure.</h2>
         </div>
         <div className="contact-actions">
+          <small>ÉCRIRE AU PROJET</small>
           <a href="mailto:contact@rc4g.fr">
-            <small>ÉCRIRE AU PROJET</small>
-            <strong>contact@rc4g.fr</strong>
+           <strong>contact@rc4g.fr</strong>
             <span>↗</span>
-          </a>
-          <a href={facebook.profile} target="_blank" rel="noreferrer">
-            <small>SUIVRE LES COULISSES</small>
+          </a> 
+          <small>SUIVRE LES COULISSES</small>
+          <a href={social.facebook} target="_blank" rel="noreferrer">            
             <strong>Facebook</strong>
+            <span>↗</span>
+          </a>          
+           <a href={social.tiktok} target="_blank" rel="noreferrer">            
+            <strong>Tiktok</strong>
             <span>↗</span>
           </a>
         </div>
